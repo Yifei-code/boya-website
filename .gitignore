@@ -1,0 +1,10 @@
+# 截图预览副本（验收工具生成）
+_preview/
+
+# 依赖与构建
+node_modules/
+
+# 系统垃圾
+Thumbs.db
+.DS_Store
+desktop.ini
