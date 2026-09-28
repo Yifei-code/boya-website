@@ -57,16 +57,28 @@
     if (!lb) return;
     var img = lb.querySelector('img');
     var cap = lb.querySelector('.lightbox__cap');
+    var trigger = null;
     document.querySelectorAll('[data-lightbox]').forEach(function (el) {
-      el.addEventListener('click', function () {
+      el.setAttribute('tabindex', '0');
+      el.setAttribute('role', 'button');
+      function open() {
+        trigger = el;
         img.src = el.getAttribute('data-full') || el.src;
         img.alt = el.alt || '';
         cap.textContent = el.getAttribute('data-caption') || el.alt || '';
         lb.classList.add('is-open');
         lb.querySelector('.lightbox__close').focus();
+      }
+      el.addEventListener('click', open);
+      el.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); }
       });
     });
-    function close() { lb.classList.remove('is-open'); img.src = ''; }
+    function close() {
+      lb.classList.remove('is-open');
+      img.src = '';
+      if (trigger) { trigger.focus(); trigger = null; }
+    }
     lb.addEventListener('click', function (e) {
       if (e.target === lb || e.target.closest('.lightbox__close')) close();
     });

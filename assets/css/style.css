@@ -28,7 +28,7 @@
   --wrap: 1180px;
   --header-h: 92px;
   --util-h: 38px;
-  --pad-section: clamp(4.5rem, 3rem + 4vw, 7.5rem);
+  --pad-section: clamp(2.8rem, 1.8rem + 2.6vw, 4.6rem);
 
   /* type scale (fluid) */
   --fs-display: clamp(2.4rem, 1.6rem + 3.2vw, 4rem);
@@ -100,7 +100,7 @@ h3 { font-size: var(--fs-h3); }
 .section--paper { background: var(--paper); }
 .section--navy { background: var(--navy-900); color: #eef1f6; }
 .section--tint { background: #f3efe5; }
-.section-head { max-width: 46rem; margin-bottom: clamp(2.2rem, 4vw, 3.5rem); }
+.section-head { max-width: 46rem; margin-bottom: clamp(1.8rem, 3vw, 2.6rem); }
 .section-head--center { margin-inline: auto; text-align: center; }
 .section-head--center .eyebrow { justify-content: center; }
 .section-head p { margin-top: 1rem; }
@@ -250,8 +250,8 @@ h3 { font-size: var(--fs-h3); }
 .stats__note { font-size: 0.75rem; color: rgba(255, 255, 255, 0.5); padding-bottom: 1.6rem; letter-spacing: 0.04em; }
 
 /* ---------- split (image + text rows) ---------- */
-.split { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2.5rem, 5vw, 5rem); align-items: center; }
-.split + .split { margin-top: clamp(3.5rem, 7vw, 6rem); }
+.split { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 4vw, 4rem); align-items: center; }
+.split + .split { margin-top: clamp(2.6rem, 5vw, 4.2rem); }
 .split__media { position: relative; }
 .split__media img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--radius); }
 .split__media--tall img { aspect-ratio: 4 / 4.6; }
@@ -336,6 +336,44 @@ h3 { font-size: var(--fs-h3); }
 .facts__row { display: grid; grid-template-columns: 220px 1fr; gap: 1.5rem; padding: 1.15rem 0; border-bottom: 1px solid var(--line); }
 .facts__row dt { font-size: 0.74rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--brass-600); padding-top: 0.2rem; }
 .facts__row dd { color: var(--ink); }
+
+/* ---------- data tables (academic information) ---------- */
+.tbl { width: 100%; border-collapse: collapse; font-size: 0.92rem; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+.tbl caption { text-align: left; font-family: var(--serif); font-size: 1.05rem; font-weight: 600; color: var(--navy-900); padding-bottom: 0.7rem; }
+.tbl th, .tbl td { padding: 0.65rem 1rem; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; }
+.tbl thead th { background: var(--navy-900); color: #fff; font-size: 0.74rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; border-bottom: 0; }
+.tbl tbody tr:last-child td { border-bottom: 0; }
+.tbl tbody tr:nth-child(even) { background: #faf7ef; }
+.tbl td.num, .tbl th.num { text-align: right; font-variant-numeric: tabular-nums; }
+.tbl .total-row td { font-weight: 700; background: #f3efe5; }
+.tbl-wrap { overflow-x: auto; margin-top: 1.2rem; }
+
+/* ---------- certificate ---------- */
+.cert {
+  background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 1rem; box-shadow: var(--shadow-md);
+}
+.cert img { border-radius: 2px; }
+.cert figcaption { font-size: 0.8rem; color: var(--muted); padding-top: 0.7rem; text-align: center; letter-spacing: 0.03em; }
+
+/* ---------- transcript specimen ---------- */
+.specimen {
+  position: relative; background: var(--paper); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: clamp(1.4rem, 3vw, 2.2rem); overflow: hidden;
+}
+.specimen::before {
+  content: "SPECIMEN"; position: absolute; top: 45%; left: 50%;
+  transform: translate(-50%, -50%) rotate(-24deg);
+  font-family: var(--serif); font-size: clamp(3rem, 8vw, 5.5rem); font-weight: 700;
+  color: rgba(14, 34, 64, 0.06); letter-spacing: 0.2em; pointer-events: none; white-space: nowrap;
+}
+.specimen__tag {
+  display: inline-block; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--brass-600); border: 1px solid var(--brass-500);
+  border-radius: 999px; padding: 0.3rem 0.9rem; margin-bottom: 1.2rem;
+}
+.specimen h4 { font-family: var(--serif); color: var(--navy-900); font-size: 1.05rem; margin: 1.2rem 0 0.5rem; }
+.specimen .blank { color: var(--muted); }
 
 /* ---------- clubs tags ---------- */
 .tags { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1.6rem; }
@@ -442,6 +480,7 @@ button[disabled] { opacity: 0.6; cursor: wait; }
 /* ---------- reveal animation ---------- */
 .reveal { opacity: 0; transform: translateY(26px); transition: opacity 0.7s var(--ease), transform 0.7s var(--ease); }
 .reveal.is-in { opacity: 1; transform: none; }
+/* JS 未加载时的回退由页面内 <noscript> 样式兜底 */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; transition: none; }
