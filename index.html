@@ -36,8 +36,8 @@
     </button>
     <nav class="nav" id="nav" aria-label="Main navigation">
       <a href="index.html" aria-current="page">Home</a>
-      <a href="about.html">About</a>
-      <a href="academics.html">Academics</a>
+      <div class="has-sub"><a href="about.html">About<span class="chev" aria-hidden="true"></span></a><div class="sub-menu"><a href="about.html">About Us</a><a href="faculty.html">Our Faculty</a></div></div>
+      <div class="has-sub"><a href="academics.html">Academics<span class="chev" aria-hidden="true"></span></a><div class="sub-menu"><a href="academics.html">Programs</a><a href="academic-information.html">Academic Information</a></div></div>
       <a href="campus-life.html">Campus Life</a>
       <a href="gallery.html">Gallery</a>
       <a href="contact.html">Contact</a>
@@ -81,9 +81,9 @@
     <div class="section-head reveal">
       <p class="eyebrow">Academics</p>
       <h2>Pathways for Every Ambition</h2>
-      <p class="lead">Each student follows a path designed around their strengths — the American high school program toward US universities, the Korea Pathway with its official university partnerships, and the Joint Examination class for students from Hong Kong, Macao and Taiwan.</p>
+      <p class="lead">Each student follows a path designed around their strengths — the American high school program toward US universities, Japanese-medium art and music tracks, the Korea Pathway with its official university partnerships, and the Joint Examination class for students from Hong Kong, Macao and Taiwan.</p>
     </div>
-    <div class="cards">
+    <div class="cards cards--4">
 <article class="card reveal">
       <div class="card__media"><img src="assets/img/academic-curriculum.jpg" alt="US Pathway Program" loading="lazy"></div>
       <div class="card__body">
@@ -93,19 +93,27 @@
       </div>
     </article>
 <article class="card reveal">
+      <div class="card__media"><img src="assets/img/club-hosts.jpg" alt="Japan Pathway Program" loading="lazy"></div>
+      <div class="card__body">
+        <h3 class="card__title"><a href="academics.html#japan">Japan Pathway Program</a></h3>
+        <p class="card__text">Japanese-medium tracks in fine art and music, taught in a dual-teacher model with Tokyo-based instructors.</p>
+        <a class="card__more" href="academics.html#japan">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+    </article>
+<article class="card reveal">
+      <div class="card__media"><img src="assets/img/club-choir.jpg" alt="Art & Music (English Track)" loading="lazy"></div>
+      <div class="card__body">
+        <h3 class="card__title"><a href="academics.html#art-music">Art &amp; Music (English Track)</a></h3>
+        <p class="card__text">An integrated program with dedicated studios, an in-house recording studio, and articulated undergraduate pathways.</p>
+        <a class="card__more" href="academics.html#art-music">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+    </article>
+<article class="card reveal">
       <div class="card__media"><img src="assets/img/academic-korea.jpg" alt="Korea Pathway Program" loading="lazy"></div>
       <div class="card__body">
         <h3 class="card__title"><a href="academics.html#korea">Korea Pathway Program</a></h3>
         <p class="card__text">Official partnerships with Yonsei, Korea and Pukyong National Universities, with dual-teacher Korean instruction.</p>
         <a class="card__more" href="academics.html#korea">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
-      </div>
-    </article>
-<article class="card reveal">
-      <div class="card__media"><img src="assets/img/academic-jee.jpg" alt="HMT Joint Examination Class" loading="lazy"></div>
-      <div class="card__body">
-        <h3 class="card__title"><a href="academics.html#jee">HMT Joint Examination Class</a></h3>
-        <p class="card__text">Systematic preparation for students from Hong Kong, Macao and Taiwan targeting mainland universities.</p>
-        <a class="card__more" href="academics.html#jee">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
       </div>
     </article>
 
@@ -265,6 +273,7 @@
       <h3>Explore</h3>
       <ul>
         <li><a href="about.html">About Us</a></li>
+        <li><a href="faculty.html">Our Faculty</a></li>
         <li><a href="academics.html">Academics</a></li>
         <li><a href="academic-information.html">Academic Information</a></li>
         <li><a href="campus-life.html">Campus Life</a></li>
@@ -276,6 +285,8 @@
       <h3>Programs</h3>
       <ul>
         <li><a href="academics.html#us">US Pathway</a></li>
+        <li><a href="academics.html#japan">Japan Pathway</a></li>
+        <li><a href="academics.html#art-music">Art &amp; Music (English Track)</a></li>
         <li><a href="academics.html#korea">Korea Pathway</a></li>
         <li><a href="academics.html#jee">HMT Joint Examination</a></li>
       </ul>

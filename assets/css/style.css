@@ -480,6 +480,49 @@ button[disabled] { opacity: 0.6; cursor: wait; }
 .nf__code { font-family: var(--serif); font-size: clamp(4rem, 10vw, 7rem); color: var(--brass-500); line-height: 1; }
 .nf p { color: var(--muted); margin: 1.2rem 0 2rem; }
 
+/* ---------- nav submenu ---------- */
+.has-sub { position: relative; }
+.has-sub > a .chev {
+  display: inline-block; width: 8px; height: 8px; margin-left: 0.3rem;
+  border-right: 1.6px solid currentColor; border-bottom: 1.6px solid currentColor;
+  transform: rotate(45deg) translateY(-2px); transition: transform 0.25s var(--ease);
+}
+.sub-menu {
+  position: absolute; top: 100%; left: 50%; transform: translate(-50%, 8px);
+  min-width: 210px; background: var(--paper); border: 1px solid var(--line);
+  border-radius: var(--radius); box-shadow: var(--shadow-md);
+  padding: 0.5rem; list-style: none;
+  opacity: 0; visibility: hidden; transition: all 0.25s var(--ease);
+}
+.has-sub:hover .sub-menu, .has-sub:focus-within .sub-menu { opacity: 1; visibility: visible; transform: translate(-50%, 0); }
+.has-sub:hover > a .chev, .has-sub:focus-within > a .chev { transform: rotate(225deg) translateY(-1px); }
+.sub-menu a {
+  display: block; padding: 0.6rem 0.9rem; font-size: 0.82rem;
+  letter-spacing: 0.05em; border-radius: 3px; white-space: nowrap;
+}
+.sub-menu a::after { display: none; }
+.sub-menu a:hover { background: var(--ivory); color: var(--navy-900); }
+.sub-menu a[aria-current="page"] { color: var(--brass-600); }
+
+/* ---------- faculty ---------- */
+.faculty-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(1.4rem, 2.5vw, 2rem); }
+.faculty-card {
+  background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 1.7rem 1.7rem 1.6rem; transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease);
+}
+.faculty-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+.faculty-card__head { display: flex; align-items: center; gap: 1rem; margin-bottom: 0.9rem; }
+.faculty-card__avatar {
+  width: 52px; height: 52px; flex: none; border-radius: 50%;
+  background: var(--navy-900); color: var(--brass-400);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--serif); font-size: 1.35rem; font-weight: 600;
+}
+.faculty-card__name { font-family: var(--serif); font-size: 1.15rem; font-weight: 600; color: var(--navy-900); line-height: 1.2; }
+.faculty-card__role { font-size: 0.74rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--brass-600); margin-top: 0.2rem; }
+.faculty-card__edu { font-size: 0.86rem; color: var(--ink); font-weight: 600; margin-bottom: 0.4rem; }
+.faculty-card__bio { font-size: 0.88rem; color: var(--muted); }
+
 /* ---------- reveal animation ---------- */
 .reveal { opacity: 0; transform: translateY(26px); transition: opacity 0.7s var(--ease), transform 0.7s var(--ease); }
 .reveal.is-in { opacity: 1; transform: none; }
@@ -503,6 +546,15 @@ button[disabled] { opacity: 0.6; cursor: wait; }
   .nav.is-open { display: flex; }
   .nav a { padding: 0.95rem 0.5rem; font-size: 0.95rem; border-bottom: 1px solid var(--line); }
   .nav a::after { display: none; }
+  /* 移动端：子菜单静态展开为缩进项 */
+  .has-sub > a .chev { display: none; }
+  .sub-menu {
+    position: static; opacity: 1; visibility: visible; transform: none;
+    box-shadow: none; border: 0; border-bottom: 1px solid var(--line);
+    padding: 0 0 0.4rem 1.2rem; min-width: 0;
+  }
+  .sub-menu a { font-size: 0.88rem; padding: 0.6rem 0.5rem; color: var(--muted); }
+  .faculty-grid { grid-template-columns: repeat(2, 1fr); }
   .nav .btn { margin: 1.2rem 0 0; justify-content: center; }
   .cards, .unis { grid-template-columns: repeat(2, 1fr); }
   .cards--4, .clubs-grid { grid-template-columns: repeat(2, 1fr); }
@@ -526,7 +578,7 @@ button[disabled] { opacity: 0.6; cursor: wait; }
 }
 
 @media (max-width: 560px) {
-  .cards, .cards--4, .unis, .features, .clubs-grid { grid-template-columns: 1fr; }
+  .cards, .cards--4, .unis, .features, .clubs-grid, .faculty-grid { grid-template-columns: 1fr; }
   .gallery-grid { columns: 1; }
   .facts__row { grid-template-columns: 1fr; gap: 0.3rem; }
   .footer__main { grid-template-columns: 1fr; }
