@@ -1,5 +1,0 @@
-页脚瘦身 + 板块间距不对称收紧（方案C）
-
-- 板块 padding-top 54px / padding-bottom 36px（交界 132→90px）
-- 页脚：padding 86→43px、行距收紧、logo 缩小、移动端改两列布局
-- 移动端网格列 minmax(0,1fr) 防溢出
