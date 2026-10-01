@@ -96,7 +96,10 @@ h3 { font-size: var(--fs-h3); }
 
 /* ---------- layout helpers ---------- */
 .wrap { width: min(100% - 3rem, var(--wrap)); margin-inline: auto; }
-.section { padding-block: var(--pad-section); }
+.section {
+  padding-top: clamp(2.4rem, 1.6rem + 2vw, 3.6rem);
+  padding-bottom: clamp(1.6rem, 1.1rem + 1.3vw, 2.3rem);
+}
 .section--paper { background: var(--paper); }
 .section--navy { background: var(--navy-900); color: #eef1f6; }
 .section--tint { background: #f3efe5; }
