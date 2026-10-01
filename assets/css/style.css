@@ -520,6 +520,8 @@ button[disabled] { opacity: 0.6; cursor: wait; }
 }
 .faculty-card__name { font-family: var(--serif); font-size: 1.15rem; font-weight: 600; color: var(--navy-900); line-height: 1.2; }
 .faculty-card__role { font-size: 0.74rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--brass-600); margin-top: 0.2rem; }
+.faculty-card__avatar--photo { background: var(--ivory); overflow: hidden; }
+.faculty-card__avatar--photo img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; display: block; }
 .faculty-card__edu { font-size: 0.86rem; color: var(--ink); font-weight: 600; margin-bottom: 0.4rem; }
 .faculty-card__bio { font-size: 0.88rem; color: var(--muted); }
 
