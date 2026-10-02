@@ -108,13 +108,20 @@
       if (err && msg) err.textContent = msg;
     }
 
+    var MSG = {
+      required: form.getAttribute('data-msg-required') || 'This field is required.',
+      ok: form.getAttribute('data-msg-ok') || 'Thank you. We will contact you shortly.',
+      fail: form.getAttribute('data-msg-fail') || 'Submission failed. Please try again.',
+      network: form.getAttribute('data-msg-network') || 'Network error. Please check your connection and try again.',
+    };
+
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       // 前端基础校验
       var firstBad = null;
       form.querySelectorAll('[required]').forEach(function (input) {
         var bad = !input.value.trim();
-        fieldError(input, bad ? 'This field is required.' : '');
+        fieldError(input, bad ? MSG.required : '');
         if (bad && !firstBad) firstBad = input;
       });
       if (firstBad) { firstBad.focus(); return; }
@@ -133,7 +140,7 @@
         .then(function (res) {
           var j = res.body || {};
           if (j.ok) {
-            showStatus(true, j.msg || 'Thank you. We will contact you shortly.');
+            showStatus(true, j.msg || MSG.ok);
             form.reset();
           } else {
             if (j.errors) {
@@ -142,11 +149,11 @@
                 if (input) fieldError(input, j.errors[name]);
               });
             }
-            showStatus(false, j.msg || 'Submission failed. Please try again.');
+            showStatus(false, j.msg || MSG.fail);
           }
         })
         .catch(function () {
-          showStatus(false, 'Network error. Please check your connection and try again.');
+          showStatus(false, MSG.network);
         })
         .finally(function () { btn.disabled = false; });
     });

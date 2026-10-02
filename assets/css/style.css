@@ -494,6 +494,17 @@ button[disabled] { opacity: 0.6; cursor: wait; }
 .nf__code { font-family: var(--serif); font-size: clamp(4rem, 10vw, 7rem); color: var(--brass-500); line-height: 1; }
 .nf p { color: var(--muted); margin: 1.2rem 0 2rem; }
 
+/* ---------- lang switch ---------- */
+.lang-link {
+  font-size: 0.8rem; font-weight: 700; letter-spacing: 0.08em;
+  color: var(--muted); padding: 0.4rem 0.2rem; margin-left: 0.6rem;
+}
+.lang-link:hover { color: var(--brass-600); }
+.lang-link::after { display: none; }
+@media (max-width: 1020px) {
+  .lang-link { margin-left: 0; border-bottom: 0 !important; }
+}
+
 /* ---------- nav submenu ---------- */
 .has-sub { position: relative; }
 .has-sub > a .chev {
