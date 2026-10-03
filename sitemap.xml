@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://boyaglobal.org/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boyaglobal.org/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://boyaglobal.org/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boyaglobal.org/"/>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://boyaglobal.org/zh/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boyaglobal.org/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://boyaglobal.org/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boyaglobal.org/"/>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://boyaglobal.org/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boyaglobal.org/about.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://boyaglobal.org/zh/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boyaglobal.org/about.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://boyaglobal.org/zh/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boyaglobal.org/about.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://boyaglobal.org/zh/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boyaglobal.org/about.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://boyaglobal.org/academics.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boyaglobal.org/academics.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://boyaglobal.org/zh/academics.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boyaglobal.org/academics.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://boyaglobal.org/zh/academics.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boyaglobal.org/academics.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://boyaglobal.org/zh/academics.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boyaglobal.org/academics.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://boyaglobal.org/academic-information.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boyaglobal.org/academic-information.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://boyaglobal.org/zh/academic-information.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boyaglobal.org/academic-information.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://boyaglobal.org/zh/academic-information.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boyaglobal.org/academic-information.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://boyaglobal.org/zh/academic-information.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boyaglobal.org/academic-information.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://boyaglobal.org/faculty.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boyaglobal.org/faculty.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://boyaglobal.org/zh/faculty.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boyaglobal.org/faculty.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://boyaglobal.org/zh/faculty.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boyaglobal.org/faculty.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://boyaglobal.org/zh/faculty.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boyaglobal.org/faculty.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://boyaglobal.org/campus-life.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boyaglobal.org/campus-life.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://boyaglobal.org/zh/campus-life.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boyaglobal.org/campus-life.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://boyaglobal.org/zh/campus-life.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boyaglobal.org/campus-life.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://boyaglobal.org/zh/campus-life.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boyaglobal.org/campus-life.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://boyaglobal.org/gallery.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boyaglobal.org/gallery.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://boyaglobal.org/zh/gallery.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boyaglobal.org/gallery.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://boyaglobal.org/zh/gallery.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boyaglobal.org/gallery.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://boyaglobal.org/zh/gallery.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boyaglobal.org/gallery.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://boyaglobal.org/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boyaglobal.org/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://boyaglobal.org/zh/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boyaglobal.org/contact.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://boyaglobal.org/zh/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://boyaglobal.org/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://boyaglobal.org/zh/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://boyaglobal.org/contact.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>
